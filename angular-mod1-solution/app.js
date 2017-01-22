@@ -11,7 +11,7 @@ function LunchCheckController ($scope) {
 
   $scope.check = function () {
   	var items = $scope.dishes.split(',');
-  	if (items.length == 0) {
+  	if ($scope.dishes == '') {
   		$scope.message = 'Please enter data first'
   	}
   	else if (items.length <4) {
